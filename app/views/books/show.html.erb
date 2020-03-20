@@ -1,10 +1,16 @@
-<div class="book-card-photo">
-  <div class="card-book-name">
-    <h3><%= @book.title %></h3>
+<div class="container">
+  <div class="book-card-photo">
+    <div class="card-book-name">
+      <h3><%= @book.title %></h3>
+    </div>
+    <div class="product-img" style="background-image: url(<%= @book.photo %>);"></div>
   </div>
-  <div class="product-img" style="background-image: url(<%= @book.photo %>);"></div>
+
+    <div class="book-card-description">
+      <p><%= @book.description %></p>
+    </div>
+
+      <p>Author: <%= @book.author %></p>
+      <p>Year: <%= @book.year %></p>
+      <p>Pages: <%= @book.pages %></p>
 </div>
-    <p><%= @book.description %></p>
-    <p><%= @book.author %></p>
-    <p><%= @book.year %></p>
-    <p><%= @book.pages %></p>
