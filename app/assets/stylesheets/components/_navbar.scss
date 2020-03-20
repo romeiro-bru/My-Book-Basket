@@ -1,12 +1,13 @@
-.navbar-lewagon {
+.navbar-mybasket {
   justify-content: space-between;
-  background: white;
+  background: $green;
+  height: 75px;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-mybasket .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-mybasket .navbar-brand img {
   width: 40px;
 }
