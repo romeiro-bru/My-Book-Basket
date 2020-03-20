@@ -1,12 +1,14 @@
-<h1>Books#new</h1>
 <div class="container">
-  <%= simple_form_for [@book] do |f| %>
-    <%= f.input :title %>
-    <%= f.input :year %>
-    <%= f.input :description %>
-    <%= f.input :pages %>
-    <%= f.input :author %>
-    <%= f.input :photo %>
-    <%= f.submit "Submit" %>
-  <% end %>
+  <div class="book-form">
+    <h1>Add a New Book:</h1>
+      <%= simple_form_for [@book] do |f| %>
+        <%= f.input :title %>
+        <%= f.input :year %>
+        <%= f.input :description %>
+        <%= f.input :pages %>
+        <%= f.input :author %>
+        <%= f.input :photo %>
+        <%= f.submit "Submit" %>
+      <% end %>
+    </div>
 </div>
