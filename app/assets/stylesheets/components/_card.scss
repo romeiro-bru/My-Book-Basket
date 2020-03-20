@@ -1,0 +1,42 @@
+////////////// STYLE BOOKS INDEX//////////////////
+.book-card-photo {
+  position: relative;
+  padding: 24px;
+  display: inline-block;
+  // border: 1px solid red;
+}
+
+.product-img {
+  width: 212px;
+  height: 290px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #cccccc94;
+
+  &:hover {
+    opacity: 0.6;
+    -webkit-filter: brightness(80%);
+  }
+}
+
+
+.book-list {
+  display: grid;
+}
+
+h3 {
+  font-family: "Amatic SC";
+  font-weight: bold;
+  color: #4e5416;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  font-size: 30px;
+  padding-left: 12px;
+}
+
+.card-book-name {
+  top: -6px;
+  left: 21px;
+  position: absolute;
+  text-transform: uppercase;
+}
