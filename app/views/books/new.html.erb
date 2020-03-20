@@ -1,2 +1,12 @@
 <h1>Books#new</h1>
-<p>Find me in app/views/books/new.html.erb</p>
+<div class="container">
+  <%= simple_form_for [@book] do |f| %>
+    <%= f.input :title %>
+    <%= f.input :year %>
+    <%= f.input :description %>
+    <%= f.input :pages %>
+    <%= f.input :author %>
+    <%= f.input :photo %>
+    <%= f.submit "Submit" %>
+  <% end %>
+</div>
