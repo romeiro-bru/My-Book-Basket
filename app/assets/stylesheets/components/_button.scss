@@ -1,0 +1,13 @@
+.btn {
+  background: $green;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+    opacity: 0.8;
+    -webkit-filter: brightness(80%);
+  }
+}
+
