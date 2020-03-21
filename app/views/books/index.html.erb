@@ -1,6 +1,9 @@
-<h1>Books#index</h1>
 <div class="container">
-  <%= @books.each do |book|  %>
-    <%= render "books/card", book: book %>
-  <% end %>
+  <div class="row">
+    <div class="col sm">
+        <%= @books.each do |book|  %>
+          <%= render "books/card", book: book %>
+        <% end %>
+      </div>
+  </div>
 </div>
