@@ -1,12 +1,12 @@
-////////////// STYLE BOOKS INDEX//////////////////
+////////////// BOOK IMAGE /////////////////
 .book-card-photo {
-  position: relative;
-  padding: 4px;
+  padding: 15px;
+  margin-bottom: 60px;
   display: inline-block;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
-.product-img {
+.book-img {
   width: 219px;
   height: 312px;
   background-size: cover;
@@ -20,19 +20,7 @@
   }
 }
 
-.book-list {
-  display: grid;
-}
-
-h3 {
-  font-family: "Amatic SC";
-  font-weight: bold;
-  color: #4e5416;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-  font-size: 30px;
-  padding-left: 12px;
-}
-
+////////// BOOK TITLE AND DESCRIPTION /////////
 .book-card-description {
   border: 1px solid $yellow;
   margin-left: 228px;

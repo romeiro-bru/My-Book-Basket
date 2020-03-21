@@ -1,5 +1,18 @@
 p {
-  padding: 40px;
-  margin-top: -60px;
-  color: #4e5416b0;
+  color: $gray;
+  margin: -1px;
+}
+
+ul {
+  content: "•";
+  color: $green;
+}
+
+.info-list {
+  border-left: 1px solid $gray;
+  border-right: 1px solid $gray;
+  margin-top: 5px;
+  margin-left: 7px;
+  padding: 10px;
+  display: inline-block;
 }
