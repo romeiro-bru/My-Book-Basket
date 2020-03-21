@@ -11,8 +11,8 @@ ul {
 .info-list {
   border-left: 1px solid $gray;
   border-right: 1px solid $gray;
-  margin-top: 5px;
-  margin-left: 7px;
-  padding: 10px;
-  display: inline-block;
+}
+
+.card-flex-photo-descrip {
+  display: flex;
 }

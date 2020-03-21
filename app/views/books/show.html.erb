@@ -1,12 +1,14 @@
 <div class="container">
-  <div class="book-card-photo">
-    <div class="book-img" style="background-image: url(<%= @book.photo %>);"></div>
-  </div>
-
-    <div class="book-card-description">
-      <h3><%= @book.title %></h3>
-      <p><%= @book.description %></p>
+  <div class="card-flex-photo-descrip">
+    <div class="book-card-photo">
+      <div class="book-img" style="background-image: url(<%= @book.photo %>);"></div>
     </div>
+
+      <div class="book-card-description">
+        <h3><%= @book.title %></h3>
+        <p><%= @book.description %></p>
+      </div>
+  </div>
 
     <div class="info-list">
       <ul>
@@ -16,3 +18,4 @@
       </ul>
     </div>
 </div>
+
