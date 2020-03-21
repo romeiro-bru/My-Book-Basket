@@ -1,10 +1,14 @@
+// .card {
+//   border: 1px solid $yellow;
+// }
 ////////////// BOOK IMAGE /////////////////
+//-------- Book Index -------//
 .book-card-photo {
   padding: 15px;
   margin-bottom: 60px;
   display: inline-block;
 }
-
+//---------------------------//
 .book-img {
   width: 219px;
   height: 312px;
@@ -18,9 +22,20 @@
     -webkit-filter: brightness(80%);
   }
 }
-
 ////////// BOOK TITLE AND DESCRIPTION /////////
+.card-flex-photo-descrip {
+  display: flex;
+}
+
 .book-card-description {
   border-left: 1px solid $green;
   border-right: 1px solid $green;
+  padding: 20px;
 }
+
+.info-list {
+  border-left: 1px solid $gray;
+  border-right: 1px solid $gray;
+  display: inline-block;
+}
+

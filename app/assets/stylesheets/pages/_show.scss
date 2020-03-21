@@ -1,5 +1,5 @@
 p {
-  color: black;
+  color: $dark-gray;
   margin: -1px;
 }
 
@@ -8,11 +8,3 @@ ul {
   color: $green;
 }
 
-.info-list {
-  border-left: 1px solid $gray;
-  border-right: 1px solid $gray;
-}
-
-.card-flex-photo-descrip {
-  display: flex;
-}
