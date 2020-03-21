@@ -3,7 +3,6 @@
   padding: 15px;
   margin-bottom: 60px;
   display: inline-block;
-  // border: 1px solid red;
 }
 
 .book-img {
@@ -22,8 +21,6 @@
 
 ////////// BOOK TITLE AND DESCRIPTION /////////
 .book-card-description {
-  border: 1px solid $yellow;
-  margin-left: 228px;
-  padding: 20px;
-  margin-top: -160px;
+  border-left: 1px solid $green;
+  border-right: 1px solid $green;
 }
