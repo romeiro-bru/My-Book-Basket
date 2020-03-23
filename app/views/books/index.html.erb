@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col sm">
-        <%= @books.each do |book|  %>
+        <% @books.each do |book|  %>
           <%= render "books/card", book: book %>
         <% end %>
       </div>
