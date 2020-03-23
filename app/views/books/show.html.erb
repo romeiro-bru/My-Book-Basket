@@ -1,21 +1,26 @@
 <div class="container">
-  <div class="card-flex-photo-descrip">
-    <div class="book-card-photo">
-      <div class="book-img" style="background-image: url(<%= @book.photo %>);"></div>
+  <div class="card">
+    <div class="card-flex-photo-descrip">
+      <div class="book-card-photo">
+        <div class="book-img" style="background-image: url(<%= @book.photo %>);"></div>
+      </div>
+
+        <div class="book-card-description">
+          <div class="title">
+            <h3><%= @book.title %></h3>
+          </div>
+          <p><%= @book.description %></p>
+        </div>
     </div>
 
-      <div class="book-card-description">
-        <h3><%= @book.title %></h3>
-        <p><%= @book.description %></p>
+      <div class="info-list">
+        <ul>
+          <li><p>Páginass: <%= @book.pages %></p></li>
+          <li><p>Ano: <%= @book.year %></p></li>
+          <li><p>Autor(a): <%= @book.author %></p></li>
+        </ul>
       </div>
-  </div>
 
-    <div class="info-list">
-      <ul>
-        <li><p>Author: <%= @book.author %></p></li>
-        <li><p>Year: <%= @book.year %></p></li>
-        <li><p>Pages: <%= @book.pages %></p></li>
-      </ul>
     </div>
 </div>
 

@@ -28,14 +28,19 @@
 }
 
 .book-card-description {
-  border-left: 1px solid $green;
-  border-right: 1px solid $green;
+  border-left: 1px solid $gray;
   padding: 20px;
+  margin: 20px;
 }
 
 .info-list {
-  border-left: 1px solid $gray;
   border-right: 1px solid $gray;
   display: inline-block;
 }
 
+.title {
+    padding: 1px;
+    text-align: center;
+    background-color: #f4f4f4;
+    opacity: 0.5;
+}
