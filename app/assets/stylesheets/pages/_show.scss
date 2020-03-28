@@ -2,8 +2,61 @@ p {
   color: $dark-gray;
   margin: -1px;
 }
+////////////// BOOK IMAGE /////////////////
+.book-show-photo {
+  padding: 15px;
+}
 
-ul {
+.book-img {
+  width: 219px;
+  height: 312px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px #cccccc94;
+
+  &:hover {
+    opacity: 0.6;
+    -webkit-filter: brightness(80%);
+  }
+}
+////////// BOOK TITLE AND DESCRIPTION /////////
+.grid-book-info {
+  display: grid;
+  grid-template-columns: 0fr 2fr;
+}
+
+.book-description {
+  border-left: 1px solid $gray;
+  padding: 20px;
+  margin: 20px;
+}
+
+.info-list {
+  display: block;
+  ul {
   content: "•";
-  color: $yellow;
+  color: $purple;
+  }
+}
+
+.new-review {
+  background-color: #21cf8161;
+  text-align: center;
+  padding: 3px;
+  a {
+    text-decoration: none;
+    color: $dark-gray;
+  }
+    &:hover {
+    opacity: 0.6;
+  }
+}
+
+.title {
+  padding: 1px;
+  text-align: center;
+  background-color: #f4f4f4;
+  opacity: 0.5;
 }

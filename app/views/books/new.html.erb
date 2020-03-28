@@ -2,12 +2,12 @@
   <div class="book-form">
     <h2>Adicione um Livro:</h2>
       <%= simple_form_for [@book] do |f| %>
-        <%= f.input :title %>
-        <%= f.input :year %>
-        <%= f.input :description %>
-        <%= f.input :pages %>
-        <%= f.input :author %>
-        <%= f.input :photo %>
+        <%= f.input :title, label: "Título:" %>
+        <%= f.input :year, label: "Ano de publicação:" %>
+        <%= f.input :description, label: "Resumo:" %>
+        <%= f.input :pages, label: "Número de Páginas:" %>
+        <%= f.input :author, label: "Autor(a):" %>
+        <%= f.input :photo, label: "URL da Foto:" %>
         <%= f.submit "Submit", class: "btn" %>
       <% end %>
     </div>
