@@ -1,26 +1,28 @@
 <div class="container">
-  <div class="card">
-    <div class="card-flex-photo-descrip">
-      <div class="book-card-photo">
+  <table>
+
+    <tr class="grid-book-info">
+      <td class="book-show-photo">
         <div class="book-img" style="background-image: url(<%= @book.photo %>);"></div>
       </div>
-
-        <div class="book-card-description">
-          <div class="title">
-            <h3><%= @book.title %></h3>
-          </div>
-          <p><%= @book.description %></p>
-        </div>
-    </div>
-
       <div class="info-list">
         <ul>
           <li><p>Páginass: <%= @book.pages %></p></li>
           <li><p>Ano: <%= @book.year %></p></li>
           <li><p>Autor(a): <%= @book.author %></p></li>
         </ul>
-      </div>
+        <div class="new-review">
+          <%= link_to "Escreva uma Review", new_book_review_path(@book) %>
+        </div>
+    </td>
 
-    </div>
+        <td class="book-description">
+          <div class="title">
+            <h3><%= @book.title %></h3>
+          </div>
+          <p><%= @book.description %></p>
+        </td>
+      </tr>
+
+  </table>
 </div>
-

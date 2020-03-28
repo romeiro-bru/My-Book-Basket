@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="review-box">
+<!-- Form Box -->
+    <div class="new-review-box">
+      <div class="write-review">Escreva sua Review</div>
+      <div class="review-form">
+        <%= simple_form_for [ @book, @review ] do |f| %>
+          <%= f.text_area :content, label: "Review" %>
+          <br>
+          <%= f.submit "Submit", class: "btn" %>
+        <% end %>
+      </div>
+      </div>
+<!-- End Form Box -->
+      <br>
+      <div class="tip-box">
+        <div class="review-tips">Review Tips</div>
+      <br>
+        <ul class="tips">
+          <li>Não inclua resumos de histórias, os usuários já possuem a sinopse escrita para eles.</li>
+          <li>Não deixe de contar os motivos pelos quais você gostou ou não do livro.</li>
+          <li>Tente não escrever spoilers.</li>
+          <li>Não copie o trabalho de outra pessoa; esta revisão deve ser escrita por você mesmo.</li>
+          <li>Não comente em outras reviews.</li>
+          <li>Esta revisão é pública.</li>
+        </ul>
+  </div>
+    <div class="note">Nota: Essa área deve ser usada postar uma review somente após o fim da leitura. Esta não é uma área de discussão.</div>
+</div>
+
