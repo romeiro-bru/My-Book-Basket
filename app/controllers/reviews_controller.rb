@@ -1,4 +1,8 @@
 class ReviewsController < ApplicationController
+  def index
+    @reviews = Review.all
+  end
+
   def new
     # we need @book in our `simple_form_for`
     @book = Book.find(params[:book_id])
@@ -9,8 +13,11 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
     @book = Book.find(params[:book_id])
     @review.book = @book
-    @review.save
-    redirect_to book_path(@book)
+    if @review.save
+      redirect_to book_path(@book)
+    else
+      render :new
+    end
   end
 
   private
