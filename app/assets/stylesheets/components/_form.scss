@@ -4,6 +4,11 @@
   border-right: 1px solid $gray;
   color: $dark-gray;
 }
+
+.form-control {
+  background-color: #f8f0ff;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.1);
+}
 ////////////////////////////////////////////////
 .review-form {
   padding: 30px;
@@ -12,8 +17,9 @@
 }
 
 textarea {
-  height: 81px;
+  height: 115px;
   width: 80%;
   border-radius: 2px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.1);
 }
 ////////////////////////////////////////////////

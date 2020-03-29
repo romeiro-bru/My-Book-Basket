@@ -2,6 +2,11 @@ p {
   color: $dark-gray;
   margin: -1px;
 }
+
+h2 {
+  font-family: "Poppins";
+  padding-top: 8px;
+}
 ////////////// BOOK IMAGE /////////////////
 .book-show-photo {
   padding: 15px;
@@ -17,24 +22,17 @@ p {
   box-shadow: 0 0 10px #cccccc94;
 
   &:hover {
-    opacity: 0.6;
-    -webkit-filter: brightness(80%);
+    opacity: 0.8;
   }
 }
 ////////// BOOK TITLE AND DESCRIPTION /////////
-.grid-book-info {
-  display: grid;
-  grid-template-columns: 0fr 2fr;
-}
-
 .book-description {
   border-left: 1px solid $gray;
-  padding: 20px;
+  padding: 25px;
   margin: 20px;
 }
 
 .info-list {
-  display: block;
   ul {
   content: "•";
   color: $purple;
@@ -44,10 +42,14 @@ p {
 .new-review {
   background-color: #21cf8161;
   text-align: center;
-  padding: 3px;
+  padding: 7px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-family: "Poppins";
   a {
     text-decoration: none;
     color: $dark-gray;
+    border-bottom: 2px dashed;
   }
     &:hover {
     opacity: 0.6;
@@ -55,8 +57,8 @@ p {
 }
 
 .title {
-  padding: 1px;
   text-align: center;
   background-color: #f4f4f4;
-  opacity: 0.5;
+  color: $dark-gray;
+  padding: 4px;
 }
