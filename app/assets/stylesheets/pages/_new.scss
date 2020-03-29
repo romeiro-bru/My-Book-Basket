@@ -5,15 +5,17 @@
 
 .write-review {
   background-color: $light-green;
+  font-family: "Poppins";
   text-align: center;
-  color: white;
+  color: $dark-gray;
   padding: 6px;
 }
 
 .review-tips {
   background-color: $light-green;
+  font-family: "Poppins";
   text-align: center;
-  color: white;
+  color: $dark-gray;
   padding: 6px;
 }
 
@@ -23,15 +25,16 @@
 
 .note {
   margin: 4px;
+  padding: 5px;
   background-color: $medium-gray;
 }
 
-// .new-review-box {
+// .tip-box {
 //   // border: 1px solid $purple;
 //   // border-radius: 2px;
 // }
 
-// .tip-box {
-//   border: 1px solid $purple;
-//   border-radius: 2px;
+// .new-review-box {
+//   // border: 1px solid $purple;
+//   // border-radius: 2px;
 // }
