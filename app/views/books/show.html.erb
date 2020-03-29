@@ -1,9 +1,9 @@
 <div class="container">
-  <table>
+  <div class="row">
 
-    <tr class="grid-book-info">
-      <td class="book-show-photo">
-        <div class="book-img" style="background-image: url(<%= @book.photo %>);"></div>
+    <div class="col-12 col-md-4 col-lg-3">
+      <div class="book-show-photo">
+        <div class="book-img" style="background-image: url(<%= @book.photo %>);">
       </div>
       <div class="info-list">
         <ul>
@@ -11,18 +11,27 @@
           <li><p>Ano: <%= @book.year %></p></li>
           <li><p>Autor(a): <%= @book.author %></p></li>
         </ul>
-        <div class="new-review">
-          <%= link_to "Escreva uma Review", new_book_review_path(@book) %>
+      </div>
+      <div class="new-review">
+        <%= link_to "Escreva um Review", new_book_review_path(@book) %>
+<!--         <%= link_to "Ver review", book_reviews_path(@book) %> -->
+      </div>
+    </div>
+    </div>
+<!-- ////////////////////////////////////////////////// -->
+    <div class="col-12 col-md-8 col-lg-9">
+      <div class="book-description">
+        <div class="title">
+          <h2><%= @book.title %></h2>
         </div>
-    </td>
+        <br>
+        <p><%= @book.description %></p>
+      </div>
+    </div>
 
-        <td class="book-description">
-          <div class="title">
-            <h3><%= @book.title %></h3>
-          </div>
-          <p><%= @book.description %></p>
-        </td>
-      </tr>
-
-  </table>
+  </div>
 </div>
+
+
+
+
