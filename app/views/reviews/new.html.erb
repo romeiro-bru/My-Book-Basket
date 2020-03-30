@@ -1,7 +1,7 @@
 <div class="container">
-  <div class="review-box">
-<!-- Form Box -->
-    <div class="new-review-box">
+  <div class="row">
+
+    <div class="col-12 col-lg-6">
       <div class="write-review">Deixe um review sobre "<%= @book.title %>"</div>
       <div class="review-form">
         <%= simple_form_for [ @book, @review ] do |f| %>
@@ -10,11 +10,9 @@
           <%= f.submit "Submit", class: "btn" %>
         <% end %>
       </div>
-      </div>
-<!-- End Form Box -->
-      <br>
-      <div class="tip-box">
-        <div class="review-tips">Tips & Rules</div>
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="review-tips">Tips & Rules</div>
       <br>
         <ul class="tips">
           <li>Não inclua resumos de histórias, os usuários já possuem a sinopse escrita para eles.</li>
@@ -22,9 +20,11 @@
           <li>Tente não escrever spoilers.</li>
           <li>Não copie o trabalho de outra pessoa; esta revisão deve ser escrita por você mesmo.</li>
           <li>Não comente outras reviews.</li>
-          <li>Esta revisão é pública.</li>
+          <li>Este review é público.</li>
         </ul>
-  </div>
-    <div class="note">Nota: Essa área deve ser usada postar um review somente após o fim da leitura. Esta não é uma área de discussão.</div>
-</div>
+    </div>
 
+  </div>
+  <br>
+  <div class="note">Nota: Essa área deve ser usada postar um review somente após o fim da leitura. Esta não é uma área de discussão.</div>
+</div>

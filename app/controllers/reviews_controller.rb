@@ -13,6 +13,7 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
     @book = Book.find(params[:book_id])
     @review.book = @book
+
     if @review.save
       redirect_to book_path(@book)
     else
