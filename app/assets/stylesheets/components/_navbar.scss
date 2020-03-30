@@ -6,6 +6,9 @@
 
 .navbar-mybasket .navbar-collapse {
   flex-grow: 0;
+  .nav-link {
+    color: white;
+  }
 }
 
 .navbar-mybasket .navbar-brand img {
