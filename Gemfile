@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.6.3'
+ruby '2.6.6'
+
+gem "aws-sdk-s3", require: false
 
 gem 'bootsnap', require: false
 gem 'devise'
