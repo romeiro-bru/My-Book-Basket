@@ -15,12 +15,13 @@
         <%= f.input :description, label: "Sinopse:" %>
         <%= f.input :pages, label: "Páginas:" %>
         <%= f.input :photo, label: "Url da foto:" %>
+
         <%= f.button :submit %>
-      <% end %>
-      <br>
         <%= link_to book_path(@book) do %>
           <i class="far fa-window-close"></i>
         <% end %>
+      <% end %>
+      <br>
 
     </div>
 

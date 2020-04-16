@@ -7,10 +7,19 @@
         <%= simple_form_for [ @book, @review ] do |f| %>
           <%= f.text_area :content, label: "Review" %>
           <br>
-          <%= f.submit "Submit", class: "btn" %>
+
+          <div class="btn-close-icon">
+            <%= f.submit "Submit", class: "btn" %>
+
+            <%= link_to book_path(@book) do %>
+              <i class="far fa-window-close"></i>
+            <% end %>
+          </div>
+
         <% end %>
       </div>
     </div>
+
     <div class="col-12 col-lg-6">
       <div class="review-tips">Tips & Rules</div>
       <br>

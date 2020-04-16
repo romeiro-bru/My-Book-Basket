@@ -7,4 +7,18 @@
 .books-index {
   margin-left: 3.3rem;
 }
+
+.book-img {
+  width: 219px;
+  height: 312px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px #cccccc94;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
 //---------------------------//

@@ -1,7 +1,11 @@
 <div class="container">
   <div class="row">
-
     <div class="col-12 col-md-4 col-lg-4">
+
+      <%= link_to books_path do %>
+        <i class="fas fa-arrow-alt-circle-left"></i>
+      <% end %>
+
       <div class="book-show-photo">
         <div class="book-img" style="background-image: url(<%= @book.photo %>);">
       </div>
