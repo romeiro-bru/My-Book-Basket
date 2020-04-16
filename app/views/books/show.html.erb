@@ -15,15 +15,19 @@
       <div class="new-review">
         <%= link_to "Escreva um Review", new_book_review_path(@book) %>
       </div>
-        <%= link_to "Ver review", book_reviews_path(@book) %>
     </div>
     </div>
 
     <div class="col-12 col-md-8 col-lg-9">
       <div class="book-description">
+
         <div class="title">
+          <%= link_to edit_book_path(@book) do %>
+            <i class="fas fa-edit"></i>
+          <% end %>
           <h2><%= @book.title %></h2>
         </div>
+
         <br>
         <p><%= @book.description %></p>
       </div>
