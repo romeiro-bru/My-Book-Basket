@@ -7,6 +7,15 @@ h2 {
   font-family: "Poppins";
   padding-bottom: 8px;
 }
+
+.fa-arrow-alt-circle-left {
+  font-size: 20px;
+  margin: 0rem 1rem;
+  color: $medium-gray;
+  &:hover{
+    opacity: 0.7;
+  }
+}
 ////////////// BOOK IMAGE /////////////////
 .book-show-photo {
   padding: 15px;
@@ -21,10 +30,6 @@ h2 {
   border-radius: 3px;
   margin-bottom: 1rem;
   box-shadow: 0 0 10px #cccccc94;
-
-  &:hover {
-    opacity: 0.8;
-  }
 }
 ////////// BOOK TITLE AND DESCRIPTION /////////
 .book-description {
