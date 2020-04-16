@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-12 col-lg-4">
+      <div class="edit-img-title-box">
+        <h2><%= @book.title %></h2>
+        <div class="book-img" style="background-image: url(<%= @book.photo %>);"></div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-8" id="edit-form-box">
+      <%= simple_form_for(@book) do |f| %>
+        <%= f.input :title, label: "Título:" %>
+        <%= f.input :year, label: "Ano de Publicação:" %>
+        <%= f.input :description, label: "Sinopse:" %>
+        <%= f.input :pages, label: "Páginas:" %>
+        <%= f.input :photo, label: "Url da foto:" %>
+        <%= f.button :submit %>
+      <% end %>
+      <br>
+        <%= link_to book_path(@book) do %>
+          <i class="far fa-window-close"></i>
+        <% end %>
+
+    </div>
+
+  </div>
+</div>
