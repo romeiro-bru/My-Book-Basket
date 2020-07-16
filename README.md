@@ -1,6 +1,18 @@
+<p  align="center">
+<img  src="https://media.giphy.com/media/toSMxU7Mguxnq/giphy.gif"  height="200" alt="Braum">
+</p>
+<br/>
+:arrow_forward:https://mybook-basket.herokuapp.com/
+
 **{ Work in progress }**
 
-It's a reading manager where you can register new books, review, check the description and edit them. 
-You can also add them to your lists.
+## Features :sparkles:
+* You can register a new book
+* You can edit a book
+* You can write a review
+* You can check a book's description
+* And you can add books into your books lists
 
-https://mybook-basket.herokuapp.com/
+## Technologies :nerd_face: 
+* Ruby on Rails :gem::steam_locomotive:
+* Css :art:	
