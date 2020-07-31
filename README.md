@@ -16,3 +16,4 @@
 ## Technologies :nerd_face: 
 * Ruby on Rails :gem::steam_locomotive:
 * Css :art:	
+* HTML5 :hammer:
