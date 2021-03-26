@@ -2,10 +2,6 @@
 <img  src="https://media.giphy.com/media/toSMxU7Mguxnq/giphy.gif"  height="200" alt="Biblioteca">
 </p>
 
-:arrow_forward:https://mybook-basket.herokuapp.com/
-
-**{ Work in progress }**
-
 ## Features :sparkles:
 * You can register a new book
 * You can edit a book
